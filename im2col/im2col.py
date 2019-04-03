@@ -53,7 +53,7 @@ def im2col(img_matrix, window_height, window_width, stride=1):
                     channel_window.append(window_temp)
             filter_window.append(channel_window)
             # don't forget change the type of filter_window
-            # list and numpy array is different data type.
+            # list and numpy array are different data types.
         filter_window = np.array(filter_window)
         return filter_window
 
